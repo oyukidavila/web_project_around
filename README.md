@@ -9,7 +9,7 @@ Manejo de Javascript básico y DOM
 Aquí podremos apreciar el perfil personal Jacques Cousteau y ciertos lugares turísticos, en forma de tarjetas digitales.En esta página podemos editar el perfil las veces que se necesiten. Se implementa un diseño responsivo, así como el manejo de media query.
 Aclaremos que la resolucón máxima es hasta 1280px.
 
-# Una descripción de ñas tecnologías y técnicas utilizadas
+# Una descripción de las tecnologías y técnicas utilizadas
 
 IDE de desarrollo - Visual Studio Code
 Metodología BEM
