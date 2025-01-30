@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arount the US</title>
+    <meta name="description" content="Alrededor de los EE.UU.">
+    <meta name="keywords" content="Lagos, Montañas, Valles">
+    <meta name="author" content="Jorge Dávila">
+    <link rel="stylesheet" href="./pages/index.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <img
+          class="header__logo"
+          src="images/header-logo.png"
+          alt="Around US logo"
+        >
+      </header>
+      <main class="content">
+        <div class="profile">
+          <img
+            class="profile__avatar"
+            src="images/Avatar.jpg"
+            alt="Jacques Cousteau"
+          >
+          <div class="profile__info">
+            <div class="profile__details">
+              <h1 class="profile__name">Jacques Cousteau</h1>
+              <button class="button" id="edit-button">
+                <img
+                  class="button__image"
+                  src="images/pen-button.png"
+                  alt="Editar datos"
+                >
+              </button>
+            </div> 
+            <p class="profile__text">Explorador</p>
+          </div>
+          <button class="add-button" id="add-card">
+            <img
+              class="add-button__image"
+              src="images/sumar.png"
+              alt="Agregar tarjeta"
+            >
+          </button>
+        </div>
+        <div class="gallery">
+          <div class="card-gallery">
+              <div class="card" id="card--yosemite">
+                <img class="card__image"
+                  src="./images/valleyosemite.png"
+                  alt="Valle de Yosemite"
+                >
+                <div class="card__elements">
+                  <p class="card__text">Valle de Yosemite</p>
+                  <button class="card-button card__button--liked"></button>
+                </div>
+              </div>
+          </div>
+          <div class="card-gallery">
+              <div class="card" id="card--lagolouise">
+                <img class="card__image"
+                  src="./images/lagolouise.png"
+                  alt="Lago Lousite"
+                >
+                <div class="card__elements">
+                  <p class="card__text">Lago Lousite</p>
+                  <button class="card-button card__button--liked"></button>
+                </div>
+              </div>
+          </div>
+          <div class="card-gallery">
+            <div class="card" id="card--calvas">
+              <img class="card__image"
+                src="./images/montañas.png"
+                alt="Montañas Calvas"
+              >
+              <div class="card__elements">
+                <p class="card__text">Monta&ntilde;as Calvas</p>
+                <button class="card-button card__button--liked"></button>
+              </div>
+            </div>
+          </div>
+          <div class="card-gallery">
+            <div class="card" id="card--latemar">
+              <img class="card__image"
+                src="./images/latemar.png"
+                alt="Latemar"
+              >
+              <div class="card__elements">
+                <p class="card__text">Latemar</p>
+                <button class="card-button card__button--liked"></button>
+              </div>
+            </div>
+          </div>          
+          <div class="card-gallery">
+            <div class="card" id="card--vanois">
+              <img class="card__image"
+                src="./images/vanoisnationalpark.png"
+                alt="Vanois National"
+              >
+              <div class="card__elements">
+                <p class="card__text">Vanois National...</p>
+                <button class="card-button card__button--liked"></button>
+              </div>
+            </div>
+          </div>             
+          <div class="card-gallery">
+            <div class="card" id="card--braies">
+              <img class="card__image"
+                src="./images/lagobraies.png"
+                alt="Lago di Braies"
+              >
+              <div class="card__elements">
+                <p class="card__text">Lago di Braies</p>
+                <button class="card-button card__button--liked"></button>
+              </div>
+            </div>
+          </div>             
+        </div>
+      </main>
+      <footer class="footer">© 2024 Around The U.S.</footer>
+    </div>
+    
+    <dialog class="popup" id="profile-popup">
+      <div class="popup__container">
+        <button class="close" id="close-button">x</button>
+        <h2 class="popup__title">Editar Perfil</h2>
+        <form method="post" class="popup__form">
+          <input
+            type="text"
+            id="name-profile"
+            value=""
+            placeholder="Name"
+            class="popup__input popup__input_name"
+            minlength="2"
+            maxlength="30"
+            required
+          >
+          <span class="popup__error" id="name-profile-error"></span>
+          <input
+            type="text"
+            id="job-profile"
+            value=""
+            placeholder="Job Title"
+            class="popup__input popup__input_job"
+            minlength="2"
+            maxlength="30"
+            required
+          >
+          <span class="popup__error" id="job-profile-error"></span>
+          <button type="submit" class="submit" id="save-button">
+            <span class="submit__text">Guardar</span>
+          </button>
+        </form>
+      </div>
+    </dialog>
+    
+    <dialog class="popup" id="card-popup">
+      <div class="popup__container">
+        <button class="close" id="close-card">x</button>
+        <h2 class="popup__title">Nuevo Lugar</h2>
+        <form method="post" class="popup__form">
+          <input
+            type="text"
+            id="card-title"
+            value=""
+            placeholder="Title"
+            class="popup__input popup__input_card-title"
+            minlength="2"
+            maxlength="30"
+            required
+          >
+          <span class="popup__error" id="card-title-error"></span>
+          <input
+            type="url"
+            id="card-url"
+            value=""
+            placeholder="URL"
+            class="popup__input popup__input_card-url"
+            required
+          >
+          <span class="popup__error" id="card-url-error"></span>
+          <button type="submit" class="submit" id="save-card">
+            <span class="submit__text">Crear</span>
+          </button>
+        </form>
+      </div>
+    </dialog>
+    <dialog class="popup__image-box" id="image-popup">
+      <div class="popup__image-container">
+        <button class="close-popup" id="close-image">x</button>
+        <img id="popup-image" class="image-details" src="./images" alt="Nuevo lugar" >
+        <h2 id="popup-label" class="popup-name">Nuevo Lugar</h2>
+      </div>
+    </dialog>    
+    <script src="scripts/index.js"></script>
+  </body>
+</html>
