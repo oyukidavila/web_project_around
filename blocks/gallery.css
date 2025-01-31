@@ -57,11 +57,11 @@
   align-content: center;
 }
 
-.card__button {
+.like-button {
   background-image: url(../images/favoriteblack.png);
 }
 
-.card__button--active {
+.button-liked {
   width: 21px;
   height: 19px;
   padding: 10px;
@@ -73,7 +73,7 @@
   align-self: center;
 }
 
-.card__button--active:hover {
+.button-liked:hover {
   opacity: 0.5;
 }
 
