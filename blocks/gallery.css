@@ -71,7 +71,11 @@ button {
   background-color: transparent;
 }
 
-.card__button--liked {
+.card__button {
+  background-image: url(../images/favoriteblack.png);
+}
+
+.card__button--active {
   width: 21px;
   height: 19px;
   padding: 10px;
@@ -83,12 +87,8 @@ button {
   align-self: center;
 }
 
-.card__button--liked:hover {
+.card__button--active:hover {
   opacity: 0.5;
-}
-
-.card__button {
-  background-image: url(../images/favoriteblack.png);
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
