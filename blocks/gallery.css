@@ -57,20 +57,6 @@
   align-content: center;
 }
 
-button {
-  background-color: transparent;
-  border: none;
-  outline: none;
-}
-
-.favorite-btn {
-  max-width: 20px;
-  height: 19px;
-  font-size: 25px;
-  cursor: pointer;
-  background-color: transparent;
-}
-
 .card__button {
   background-image: url(../images/favoriteblack.png);
 }
@@ -89,6 +75,20 @@ button {
 
 .card__button--active:hover {
   opacity: 0.5;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.favorite-btn {
+  max-width: 20px;
+  height: 19px;
+  font-size: 25px;
+  cursor: pointer;
+  background-color: transparent;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
