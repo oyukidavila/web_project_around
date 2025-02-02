@@ -25,4 +25,4 @@ Podríamos tal vez mostrar las imagenes de una forma en que se muevan o desplace
 
 # El enlace a GitHub Pages
 
-https://github.com/oyukidavila/web_project_around
+https://oyukidavila.github.io/web_project_around/
